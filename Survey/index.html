@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+<body>
+  <h1 id="title">FCC Survey Form</h1>
+  <section id="container">
+    <p id="description"> Let's see what developers does the <strong>Free Code Camp</strong> community has!</p>
+    <form id="survey-form">
+      <label id="name-label">* Name: </label>
+        <input id="name" placeholder="Enter your name" required>
+      <label id="email-label">* Email: </label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+      <label id="number-label"> Years of Programming Experience:</label>
+      <input for="age" id="number" placeholder="Enter age" type="number" min="1" max="40">
+      <label>Developer Type: </label>
+      <select id="dropdown">
+        <option value="Front End">Front End</option>
+        <option value="Back End">Back End</option>
+        <option value="Dev-Ops">Dev-Ops</option>
+        <option value="Product Manager">Product Manager</option>
+        <option value="Dev-Ops">Mobile Developer</option>
+        <option value="Dev-Ops">Designer</option>
+      </select>
+      <label id="editor">Editor Used: </label>
+      <div class="radio">
+        <input value="1" type="radio" name="prefer" id="radio-buttons"><label>Vim</label>
+        <input value="2" type="radio" name="prefer"  id="radio-buttons"><label>Sublime-Text</label>
+        <input value="3" type="radio" name="prefer" id="radio-buttons"><label>Emacs</label>
+        <input value="4" type="radio" name="prefer" id="radio-buttons"><label>Atom</label>
+      </div>
+      <label id="ways of educating">Ways of learning: </label>
+      <div class="radio">
+        <input class="userRatings" value="1" type="checkbox" name="E-courses" id="check-buttons"><label>Ecourses</label>
+        <input class="userRatings" value="2" type="checkbox" name="University"  id="check-buttons"><label>University</label>
+        <input class="userRatings" value="3" type="checkbox" name="Youtube" id="check-buttons"><label>Youtube</label>
+        <input class="userRatings" value="4" type="checkbox" name="Bootcamp" id="check-buttons"><label>Bootcamp</label>
+      </div>
+      <label id="email-label">Experience with Frameworks: </label>
+        <input id="Framwork" type="text" placeholder="ex. Jquery, SASS, Node">
+      <label id="email-label">Experience with Databases: </label>
+        <input id="DB" type="text" placeholder="ex. MariaDB, MongoDB, MySQL">
+      
+      <label> Please add more comments here: </label>
+      <textarea id="comments" style="height:80px;" name="comment" placeholder="Enter your comment here..."></textarea>
+      <button style="justify-self: end;" id="submit" type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>

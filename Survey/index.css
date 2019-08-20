@@ -1,0 +1,98 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #4f81c7;
+    font-family: 'Livvic', sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.6em;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 10px;
+    }
+    label {
+     font-size: 10px; 
+    }
+  }
+  
+  section {
+    background-color: #f0d78c;
+    width: 50%;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 2%;
+    box-shadow: 30px 10px #999;
+  }
+  
+  #survey-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 0 px;
+    width: 90%;
+    margin: 30px auto;
+  }
+  
+  @media (max-width: 460px) {
+    #survey-form {
+      display: inline-block;
+      margin: 10px auto;
+    }
+  }
+  
+  label {
+    width: 100 px;
+    padding: 10px;
+  }
+  
+  input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 3%;
+  }
+  
+  @media (max-width: 460px) {
+    #radio-buttons, #check-buttons {
+      width: 10%;
+    }
+  }
+  
+  .radio {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    margin-left: 0;
+  }
+  
+  select {
+    width: 60%;
+  }
+  
+  button {
+    padding: 10px;
+    display: inline-block;
+    width: 20%;
+    height: 60px;
+    text-align: center;
+    background-color: hsl(227, 54%, 70%);
+    border-radius: 20%;
+  }
+  
+  @media (max-width: 460px) {
+    button {
+      font-size: 0.5rem;
+      height: 30px;
+      width: 30%;
+    }
+    
+    textarea {
+      width: 80%;
+    }
+  }

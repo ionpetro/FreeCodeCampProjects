@@ -1,41 +1,65 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <head>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="index.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap" rel="stylesheet"> 
 </head>
-</body>
 <header id="header">
-    <img id="header-img"
-        src="https://img.freepik.com/free-vector/bicycle-shop-logo-design-vector_53876-40626.jpg?size=338&ext=jpg"
-        alt="logo-image" width="200px" height="200px">
-    <nav id="nav-bar">
-        <ul>
-            <li class="nav-link" href="#about">About</li>
-            <li class="nav-link" href="#newsletter">Newsletter</li>
-            <li class="nav-link" href="#prices">Prices</li>
-        </ul>
-    </nav>
+  <img id="header-img" src="https://img.freepik.com/free-vector/bicycle-shop-logo-design-vector_53876-40626.jpg?size=338&ext=jpg" alt="logo-image" width="200px" height="200px">
+  <nav id="nav-bar">
+    <ul>
+      <li><a class="nav-link" href="#about">About</a></li>
+      <li><a class="nav-link" href="#newsletter">Newsletter</a></li>
+      <li><a class="nav-link" href="#prices">Prices</a></li>
+    </ul>
+  </nav>
+    
 </header>
+<div id="space"></div>
 <div class="about">
-    <section id="about">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kSkqgXV60RE" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h3> Welcome to BICYCLE SHOP </h3>
+  <section id="about">
+  <div class="grid">
+      <p id="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis. Pellentesque nec nam aliquam sem et tortor consequat id porta. Tellus in metus vulputate eu scelerisque felis imperdiet. Urna duis convallis convallis tellus id. Ultrices in iaculis nunc sed. Facilisi cras fermentum odio eu feugiat pretium nibh. Augue eget arcu dictum varius duis at consectetur.<br><br> Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Sed nisi lacus sed viverra tellus in hac habitasse. Et tortor consequat id porta nibh venenatis cras. Nisl pretium fusce id velit ut tortor. Consequat semper viverra nam libero justo laoreet. Cum sociis natoque penatibus et. Nec ultrices dui sapien eget mi proin sed libero enim.</p>
+<iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/kSkqgXV60RE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+  </div>
 </div>
-<div class="newsletter">
+  <div class="newsletter">
     <section id="newsletter">
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" type="email" placeholder="Please enter your email" required>
-            <input type="submit" id="submit" value="Submit" class="btn">
-        </form>
+      <h3> Subscribe to our Newsletter! </h3>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" name="email" placeholder="Please enter your email" required>
+        <input type="submit" id="submit" value="Submit" class="btn">
+      </form>
     </section>
-</div>
-<div class="prices">
-    Add css grid!
-    <section id="prices">
+  </div>
+  <div class="prices">
+    <h3> Check out our PRICES! </h3>
+    <section id="prices" class="flex-container">
+      <div>
+        <h4>Free Bike</h4>
+        <p> Pellentesque nec nam aliquam sem et tortor consequat id porta. Tellus in metus vulputate eu scelerisque felis imperdiet. </p>
+        <p id="price">$100</p>
+      </div>
+      <div>
+        <h4>Mountain Bike</h4>
+        <p> Pellentesque nec nam aliquam sem et tortor consequat id porta. Tellus in metus vulputate eu scelerisque felis imperdiet. </p>
+        <p id="price">$350</p>
+      </div>
+      <div>
+        <h4>Race Bike</h4>
+        <p> Pellentesque nec nam aliquam sem et tortor consequat id porta. Tellus in metus vulputate eu scelerisque felis imperdiet. </p>
+        <p id="price">$500</p>
+      </div>
+        
     </section>
-</div>
+  </div>
+<footer>
+  &reg; All rights reserved<br>
+  By Ion Petropoulos
+</footer>
 </body>
-
 </html>

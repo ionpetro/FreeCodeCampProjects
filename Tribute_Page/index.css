@@ -9,6 +9,7 @@ body {
   text-align: center;
   background-color: #b5b5b5;
   line-height: 2;
+  position: relative;
 }
 
 #page-title {
@@ -77,11 +78,15 @@ img {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
   margin-bottom: 0;
+  margin-top: 200px;
   width: 100%;
   background-color: black;
   color: white;
   padding: 30px 0;
+
 }
 
 a:hover {

@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    overflow: auto;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      padding: 0;
+    }
+  }
+  
+  
